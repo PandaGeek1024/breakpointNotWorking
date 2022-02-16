@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:flutter_sample/main.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:mocktail/mocktail.dart';
 
 class MockStateNotifier<T> extends StateNotifier<T> with Mock {
@@ -12,7 +12,6 @@ class MockStateNotifier<T> extends StateNotifier<T> with Mock {
     state = value;
   }
 }
-
 
 class MockCounterNotifier extends MockStateNotifier<int> implements CounterNotifier {
   MockCounterNotifier() : super(0);

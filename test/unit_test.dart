@@ -1,6 +1,6 @@
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_sample/main.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:mocktail/mocktail.dart';
 
 class MockStateNotifier<T> extends StateNotifier<T> with Mock {

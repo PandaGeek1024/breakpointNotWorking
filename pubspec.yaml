@@ -31,7 +31,8 @@ dependencies:
     sdk: flutter
 
   freezed_annotation: ^1.0.0
-  flutter_riverpod: ^1.0.3
+  flutter_hooks: ^0.18.0
+  hooks_riverpod: ^1.0.3
 
   equatable: ^2.0.3
 
